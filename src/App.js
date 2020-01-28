@@ -7,10 +7,14 @@ const App = () => (
   <div>
     <Navigation />
 
-    <Route path="/About" component={About} />
-    <Route path="/Contact" component={Contact} />
-    <Route exact path="/" component={Home} />
-  </div>
+    {/* <Route path="/About">  
+    <h1>About</h1>;
+        </Route>
+    <Route path="/Contact"> <h1>Contact</h1></Route>   */}
+    <Route exact path="/" > <Home/></Route>
+    <Route path="/About"><About/></Route>
+    <Route path="/Contact"><Contact/></Route>
+    </div>
 );
 
 export default App;
